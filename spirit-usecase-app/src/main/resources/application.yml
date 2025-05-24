@@ -1,0 +1,19 @@
+server:
+  undertow:
+    threads:
+      io: 16
+      worker: 1000     # 根据并发请求量调整
+    # 缓冲区配置，根据平均请求大小调整
+    buffer-size: 1024
+    # 是否直接缓存缓冲区，减少内存拷贝
+    direct-buffers: true
+    max-http-post-size: 100MB
+spring:
+  threads:
+    virtual:
+      enabled: true
+
+spirit:
+  demo:
+    enabled: true
+    message: "Spirit 自定义 Springboot Starter"

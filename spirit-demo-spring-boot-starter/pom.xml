@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.dante.spirit</groupId>
+    	<artifactId>spirit-starter-parent</artifactId>
+    	<version>1.1.0</version>
+    </parent>
+
+    <artifactId>spirit-demo-spring-boot-starter</artifactId>
+    <version>${spirit-demo.version}</version>
+    <name>Demo Spring Boot Starter</name>
+    <description>Starter for Demo Service</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.dante.spirit</groupId>
+            <artifactId>spirit-demo-spring-boot-autoconfigure</artifactId>
+            <version>${spirit-demo.version}</version>
+        </dependency>
+        <!--
+        如果你的 SpiritDemoService 本身依赖了其他第三方库（例如 Apache Commons Lang），
+        并且你希望使用你的 Starter 的项目也自动获得这个依赖，那么你可以在这里添加
+        -->
+        <!-- 其他第三方库 -->
+    </dependencies>
+</project>
